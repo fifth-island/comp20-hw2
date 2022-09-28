@@ -1,0 +1,458 @@
+body {
+ font-family: Roboto;
+}
+/* organize the elements from the header */
+#header-wrap {
+ display: flex;
+ position: sticky;                   
+ align-items: center;         
+ justify-content: space-between; 
+ text-align: center;
+ padding: 1rem 0;
+ border-bottom: solid #2b9826;
+}
+
+/* header was divided into three elements so that both logo and menu could be 
+properly aligned in the opposite sides  */
+#header-main   { margin-bottom: 0; background-color: #ffffff; color: rgb(99, 52, 52); }
+.header-left   { width: 200px; padding-left: 16px;}
+.header-right  { width: 200px; padding-top: 0%; padding-bottom: 0%; }
+.header-center { width: 100px; }
+
+/* a few functions that modify specifically the menu in the left of the html */
+.top-bar {
+list-style-type: none;
+display: flex;
+align-items: center;
+justify-content: right;
+gap: 10px;
+flex-shrink: 0;
+padding-right: 20px;
+padding-bottom: 0px;
+padding-top: 5px;
+}
+
+.tab a {
+ font-family: Roboto Slab;
+ font-size: medium;
+ color: #2b9826;
+}
+
+/* selectors for the big image in the main page  */
+.py-5 {
+ padding-top: 12rem !important;
+ padding-bottom: 30rem !important;
+}
+
+.bg-image-full {
+ background-repeat: no-repeat;
+ background-attachment: scroll;
+ background-position: center;
+ background-size: cover;
+
+}
+
+/* selectors for the white text-box that overlays 
+the big image and also interact with the rest of the page */
+#framed-box {
+ display: block;
+ position: relative;
+ top: -250px;
+ left: 25%;
+ height: fit-content;
+ background-color: #FFFFFF;
+ text-align: center;
+ width: 50%;
+ outline: dashed #37C130;
+ outline-offset: -20px;
+ outline-width: 10px;
+ padding-top: 2%;
+ padding-left: 1%;
+ padding-right: 1%;
+
+}
+
+#framed-box h2 {
+ font-family: Roboto Slab;
+ color:#2b9826;
+ font-size: 260%;
+}
+
+#framed-box p {
+ font-size: 150%;
+ margin: 0px 20px;
+ 
+}
+
+#framed-box a {
+ font-family: Roboto Slab;
+ color: #FFFFFF;
+ font-size: 100%;
+ margin: 0px 20 px;
+ border: solid #37C130;
+ padding: 4px;
+ border-radius:13%;
+ background-color: #37C130;
+}
+
+/* responsive approach to adjust the text box */
+@media screen and (max-width: 673px) {
+ #framed-box h2 {
+  font-size: 140%;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+ }
+ #framed-box p {
+  font-size: 80%;
+ }
+}
+
+@media screen and (max-width: 450px) {
+ #framed-box h2 {
+  font-size: 140%;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+ }
+ #framed-box p {
+  font-size: 80%;
+ }
+ 
+ #framed-box {
+  display: block;
+  position: relative;
+  top: -250px;
+  left: 12.5%;
+  height: fit-content;
+  background-color: #FFFFFF;
+  text-align: center;
+  width: 75%;
+  margin-right: 75%;
+  outline: dashed #37C130;
+  outline-offset: -20px;
+  outline-width: 10px;
+  padding-top: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+ 
+ }
+ 
+ .py-5 {
+  padding-top: 12rem !important;
+  padding-bottom: 10rem !important;
+ }
+}
+
+/* selection for fourth big content in main page */
+#awards {
+ background-color: #FFFFFF;
+ display: block;
+ position: relative;
+ top: -230px;
+ height: fit-content;
+ text-align: center;
+ width: 100%;
+ padding-bottom: 0%;
+}
+
+#awards h2 {
+ font-family: Roboto Slab;
+ color:black;
+ font-size: 36px;
+ padding: 2%;
+ margin-left: 12px;
+ margin-right: 12px;
+}
+
+#awards img {
+ max-width: 75%;
+ height: auto;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+/* selection for fifth big section in main */
+#Contact {
+ top: -115px;
+ position: relative;
+ left: auto;
+ right: auto;
+ text-align: center;
+}
+
+#Contact a {
+ margin-left: calc(50%-width);
+ text-align: center;
+}
+
+#Contact a button {
+ background-color: #2b9826;
+ border: none;
+ border-radius: 10%;
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-family: Roboto Slab;
+ font-size: 16px;
+}
+
+/* selector for the footer -> it is constant for all pages */
+footer {
+ position: absolute;
+ bottom: auto;
+ left: 0;
+ right: 0;
+ background: #FFFFFF;
+ border-top: solid #2b9826;
+ height: auto;
+ width: 100vw;
+ color: #2b9826;
+}
+
+.footer-content {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ text-align: center;
+}
+
+.footer-content h3 {
+ font-family: Roboto Slab;
+ color:#2b9826;
+ font-weight: 500;
+ text-transform: capitalize;
+ line-height: 3rem;
+}
+
+.footer-content p {
+ max-width: 400px;
+ font-size: 40%;
+ margin: 10px auto;
+ line-height: 28px;
+ font-size: 14px;
+ color: #000;
+}
+
+.footer-bottom {
+ background: #2b9826;
+ width: 100vw;
+ padding: 20px;
+padding-bottom: 40px;
+ text-align: center;
+}
+
+.footer-bottom p {
+float: left;
+font-size: 14px;
+word-spacing: 2px;
+ text-transform: capitalize;
+}
+.footer-bottom p a {
+color: #ffffff;
+font-family: Roboto Slab;
+font-size: 16px;
+text-decoration: none;
+}
+.footer-bottom span {
+ text-transform: uppercase;
+ opacity: .4;
+ font-weight: 200;
+}
+.footer-menu {
+float: right;
+
+}
+.footer-menu ul {
+display: flex;
+}
+.footer-menu ul li {
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a {
+color: #FFFFFF;
+font-family: Roboto Slab;
+text-decoration: none;
+}
+.footer-menu ul li a:hover{
+color: #37C130;
+}
+
+@media (max-width:673px) {
+ .footer-menu {
+  display: none;
+ }
+
+}
+
+/* selectors for complex catalogue of products in
+the page of services */
+.products {
+ background-color: #ebfaeb;
+}
+
+.products h2 {
+ font-family: Roboto Slab;
+ text-align: center;
+ color:#2b9826;
+}
+
+.products .descript {
+ text-align: center;
+ padding: 0 70px;
+ font-weight:600;
+ font-size: 130%;
+}
+
+.division {
+ color:#2b9826;
+ text-align: center;
+ margin-bottom: 40px;
+}
+
+.column {
+ float: left;
+ width: 25%;
+ padding: 0 10px;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+
+.card {
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ max-width: 150px;
+ width: 100%;
+ margin: auto;
+ text-align: center;
+ padding: 16px;
+ background-color: #FFFFFF;
+}
+
+.card h1 {
+ font-family: Roboto Slab;
+ color:#2b9826;
+ max-width: 120px;
+ font-size: 150%;
+}
+
+.card img {
+ width: 100%;
+ max-height: 100px;
+ height: auto;
+}
+
+.price-line {
+ display: grid;
+ align-items:center;
+ gap: 10%;
+ margin-bottom: 7%;
+}
+
+.price-line object {
+ grid-row-start: 1;
+ grid-column-start: 2;
+ max-width: 30px;
+ width: 100%;
+ height: auto;
+ margin-bottom: 3%;
+ align-self: center;
+}
+
+.price-line p {
+ color: black;
+ font-weight: bolder;
+ font-size: 130%;
+ margin-bottom: 3%;
+}
+
+.card button {
+ border: none;
+ outline: 0;
+ padding: 12px;
+ color: white;
+ background-color: #37C130;
+ text-align: center;
+ cursor: pointer;
+ width: 100%;
+ font-family: Roboto Slab;
+ font-size: 18px;
+}
+
+.card button:hover {
+ opacity: 0.7;
+}
+
+@media screen and (max-width: 600px) {
+ .column {
+   width: 100%;
+   display: block;
+   margin-bottom: 20px;
+ }
+ .products h2 {
+  font-size: 24px;
+  margin-left: 16px;
+  margin-right: 16px;
+ }
+}
+
+/* selectors for main element in the last page */
+.contact {
+ padding-top: 12rem !important;
+ padding-bottom: 15rem !important;
+ background-repeat: no-repeat;
+ background-attachment: scroll;
+ background-position: center;
+ background-size: cover;
+ text-align: center;
+}
+
+.contact .division-cont {
+ text-align: center;
+ margin-bottom: 20px;
+ font-size: 50px;
+ font-family: Roboto;
+ color: #2b9826;
+}
+
+form {
+ position: relative;
+ box-sizing: border-box;
+ width: 100%;
+ 
+}
+
+form label {
+ color: white;
+}
+
+form input {
+ border: none;
+ font-family: Roboto Slab;
+ font-size: 14px;
+ color: white;
+ background-color: #2b9826;
+}
+
+#text {
+ height: 150px;
+ max-width: max-content;
+ box-sizing: border-box;
+ background-color: #2b9826;
+}
+
+input[type=submit] {
+ background-color: #37C130;
+}
