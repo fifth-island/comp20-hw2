@@ -124,7 +124,7 @@ the big image and also interact with the rest of the page */
  #framed-box {
   display: block;
   position: relative;
-  top: -250px;
+  top: -170px;
   left: 12.5%;
   height: fit-content;
   background-color: #FFFFFF;
@@ -144,6 +144,7 @@ the big image and also interact with the rest of the page */
   padding-top: 12rem !important;
   padding-bottom: 10rem !important;
  }
+
 }
 
 /* selection for fourth big content in main page */
@@ -156,6 +157,12 @@ the big image and also interact with the rest of the page */
  text-align: center;
  width: 100%;
  padding-bottom: 0%;
+}
+
+@media screen and (max-width: 450px) {
+#awards {
+ top: -150px;
+}
 }
 
 #awards h2 {
